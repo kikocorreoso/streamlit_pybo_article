@@ -15,4 +15,4 @@ dependencies:
   - jupyter-server-proxy
   - nbserverproxy
   - pip:
-    streamlit==0.53.0
+    - streamlit==0.53.0
