@@ -3,7 +3,7 @@ from pathlib import Path
 import json
 
 import matplotlib
-matplotlib.use('Agg')
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 import streamlit as st
 import xarray as xr
