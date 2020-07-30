@@ -6,6 +6,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import streamlit as st
+from streamlit_folium import folium_static
 import xarray as xr
 import pandas as pd
 import seaborn as sns
@@ -193,7 +194,7 @@ if st.sidebar.button("Pinta"):
     st.markdown(f"Longitud: {lon:.1f}")
     st.markdown(f"Latitud:  {lat:.1f}")
     fig, ts = plot_noaa(xarr, 2.5, 39.5)
-    mapa = create_map(lon, lat, tile=tile)
+    folium_static(create_map(lon, lat, tile=tile))
     st.pyplot(fig)
     st.markdown(mapa._repr_html_(), unsafe_allow_html=True)
     st.table(ts)
