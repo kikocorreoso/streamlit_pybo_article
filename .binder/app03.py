@@ -2,12 +2,12 @@ from typing import Union
 from pathlib import Path
 import json
 
-import streamlit as st
-import xarray as xr
-import pandas as pd
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+import streamlit as st
+import xarray as xr
+import pandas as pd
 import seaborn as sns
 import numpy as np
 import folium
