@@ -194,9 +194,8 @@ if st.sidebar.button("Pinta"):
     st.markdown(f"Longitud: {lon:.1f}")
     st.markdown(f"Latitud:  {lat:.1f}")
     fig, ts = plot_noaa(xarr, 2.5, 39.5)
-    folium_static(create_map(lon, lat, tile=tile))
     st.pyplot(fig)
-    st.markdown(mapa._repr_html_(), unsafe_allow_html=True)
+    folium_static(create_map(lon, lat, tile=tile))
     st.table(ts)
 else:
     st.markdown(
