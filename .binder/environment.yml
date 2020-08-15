@@ -12,7 +12,6 @@ dependencies:
   - netcdf4
   - xarray
   - jupyter-server-proxy
-  - nbserverproxy
   - pip:
     - streamlit
     - streamlit-folium
