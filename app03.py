@@ -193,7 +193,7 @@ tile = st.sidebar.selectbox(
 if st.sidebar.button("Pinta"):
     st.markdown(f"Longitud: {lon:.1f}")
     st.markdown(f"Latitud:  {lat:.1f}")
-    fig, ts = plot_noaa(xarr, 2.5, 39.5)
+    fig, ts = plot_noaa(xarr, lon, lat)
     st.pyplot(fig)
     folium_static(create_map(lon, lat, tile=tile))
     st.table(ts)
