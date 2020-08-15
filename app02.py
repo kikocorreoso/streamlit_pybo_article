@@ -110,7 +110,7 @@ lat = st.slider(
 if st.button("Pinta"):
     st.markdown(f"Longitud: {lon:.1f}")
     st.markdown(f"Latitud:  {lat:.1f}")
-    fig, ts = plot_noaa(xarr, 2.5, 39.5)
+    fig, ts = plot_noaa(xarr, lon, lat)
     st.pyplot(fig)
     st.table(ts)
 else:
